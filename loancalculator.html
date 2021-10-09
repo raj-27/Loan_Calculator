@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dummy2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row ">
+            <div class=" myCol1 col-md-6 mx-auto shadow pt-3  bg-white rounded">
+                <div class="bg-dark text-white card card-body text-center">
+                    <h1 class="heading dispaly-5">loan calculator</h1>
+                </div>
+                <form id="loan-form">
+                    <div class="form-group mt-2 mb-2">
+                        <label for="inputAmount" class="text-black mb-lg-2">Total Amount</label>
+                        <input type="number" class="form-control" id="inputAmount" aria-describedby="amountHelp" placeholder="Enter Amount" required>
+                    </div>
+
+                    <div class="form-group mt-2 mb-2">
+                        <label for="inputInterest" class="text-black mb-lg-2">Interest</label>
+                        <input type="number" class="form-control" id="inputInterest" aria-describedby="interestHelp" placeholder="Enter Interest" required>
+                    </div>
+                    <div class="form-group mt-2 mb-2">
+                        <label for="inputYears" class="text-black mb-lg-2">Years</label>
+                        <input type="number" class="form-control" id="inputYears" aria-describedby="interestHelp" placeholder="Enter Years" required>
+                    </div>
+
+                    <button type="submit" class=" btn btn-primary mt-4">Submit</button>
+                </form>
+                <div id="result">
+                    <div class=" text-black text-decoration-underline mt-1">
+                        <h1 class="text-center">Result</h1>
+                    </div>
+                    <div class="form-group mb-2 mt-2">
+                        <label for="monthlyPayment">Monthly payment</label>
+                        <input disabled type="number" class="form-control" id="monthlyPayment" aria-describedby="amountHelp">
+                    </div>
+                    <div class="form-group mb-2 mt-2">
+                        <label for="totalPayment">Total Payment</label>
+                        <input disabled type="number" class="form-control" id="totalPayment" aria-describedby="amountHelp">
+                    </div>
+                    <div class="form-group mb-2 mt-2">
+                        <label for="totalInterest">Total Interest</label>
+                        <input disabled type="number" class="form-control" id="totalInterest" aria-describedby="amountHelp">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="dummy2.js"></script>
+
+</html>
